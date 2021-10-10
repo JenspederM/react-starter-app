@@ -1,0 +1,70 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+  .input-box {
+    @apply px-2 py-1 outline-none border rounded;
+  }
+  .input-box:focus {
+    @apply outline-none;
+  }
+  .modal-content {
+    @apply bg-white px-6 py-4 border border-gray-300 shadow-lg rounded;
+  }
+
+  .button-small {
+    @apply bg-white py-1 px-2 shadow rounded border border-gray-200 text-xs;
+  }
+  .button-small:focus {
+    @apply outline-none;
+  }
+  .button-small:hover {
+    @apply font-medium;
+  }
+
+  .button-active {
+    @apply bg-gray-700 border-gray-700 text-white font-medium;
+  }
+
+  .button-popup {
+    @apply py-1 w-full font-medium text-gray-700;
+  }
+  .button-popup:focus {
+    @apply outline-none;
+  }
+  .button-popup:hover {
+    @apply bg-gray-100;
+  }
+
+  .card {
+    @apply border border-gray-300 rounded p-4 bg-white shadow;
+  }
+
+  .sidebar-button {
+    @apply flex items-center text-xs rounded-lg hover:bg-gray-200 px-2 py-1 border;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.hide-spinners input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
