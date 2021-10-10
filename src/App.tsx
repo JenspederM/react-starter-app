@@ -41,7 +41,7 @@ const LoginWall: React.FC = ({ children }) => {
 
 const TheApp: React.FC = () => {
   return (
-    <div className={"w-screen min-h-screen relative pl-56 bg-gray-bg text-gray-800"}>
+    <div className="w-screen min-h-screen relative pl-56 bg-gray-bg text-gray-800">
       <Sidebar />
       <Switch>
         <Route exact path="/" component={HomePage} />
